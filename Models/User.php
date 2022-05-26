@@ -2,9 +2,10 @@
 
 class User {
     protected $nomeUtente;
-    protected $numeroCarta;
-    protected $cartaScaduta;
+    private $numeroCarta;
+    private $cartaScaduta;
     protected $registrazione;
+    
 
 
     function __construct(String $nomeUtente, int $numeroCarta, bool $cartaScaduta, bool $registrazione){
@@ -12,7 +13,7 @@ class User {
         $this->numeroCarta=$numeroCarta;
         $this->cartaScaduta=$cartaScaduta;
         $this->registrazione=$registrazione;
+        
     }
 
-    
 }

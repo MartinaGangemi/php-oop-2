@@ -3,13 +3,21 @@
 class Prodotti {
     protected $tipologiaProdotto;
     protected $prezzo;
-    protected $sconto;
+    protected $sconto = 0;
 
 
-    function __construct(String $tipologiaProdotto, float $prezzo, int $sconto){
+    public function __construct(String $tipologiaProdotto, float $prezzo){
         $this->tipologiaProdotto=$tipologiaProdotto;
         $this->prezzo=$prezzo;
-        $this->sconto=$sconto;
+    }
+
+    public function getSconto(){
+        if($registrazione==true){
+           return $this->sconto = 20;
+        } else{
+           return $this->sconto = 0;
+        }
+
     }
 
     
