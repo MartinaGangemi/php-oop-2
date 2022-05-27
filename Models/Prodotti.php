@@ -1,13 +1,9 @@
 <?php
 
-class Prodotti {
-    protected $tipologiaProdotto;
+trait Prodotti {
+    
+    protected $nome;
+    protected $categoria;
     protected $prezzo;
-    
-    public function __construct(String $tipologiaProdotto, float $prezzo){
-        $this->tipologiaProdotto=$tipologiaProdotto;
-        $this->prezzo= $prezzo;
-    }
 
-    
 }

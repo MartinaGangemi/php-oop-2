@@ -1,21 +1,18 @@
 <?php
-require __DIR__ ."/Card.php";
-class User {
-    use Card;
+
+trait User {
+    
     protected $nomeUtente;
     protected $registrazione;
     protected $sconto;
     
     
-
-
-    function __construct(String $nomeUtente, int $numeroCarta, bool $cartaScaduta, bool $registrazione, bool $sconto, $pagamentoConsentito){
+    function __construct(String $nomeUtente, bool $registrazione, bool $sconto,int $numeroCarta, bool $cartaScaduta, $pagamentoConsentito){
         $this->nomeUtente=$nomeUtente;
-        $this->numeroCarta=$numeroCarta;
-        $this->cartaScaduta=$cartaScaduta;
         $this->registrazione=$registrazione;
         $this->sconto=$sconto;
-        
+        $this->numeroCarta=$numeroCarta;
+        $this->cartaScaduta=$cartaScaduta;
     }
 
     public function getSconto(){

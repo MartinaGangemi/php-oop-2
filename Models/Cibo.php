@@ -1,12 +1,14 @@
 <?php
 
-class Cibo extends Prodotti{
-    protected $name;
+class Cibo {
+    use Prodotti;
     protected $marca;
 
-    function __construct(String $tipologiaProdotto, float $prezzo, String $name, String $marca){
-        parent:: __construct($tipologiaProdotto, $prezzo);
-        $this->name=$name;
+    function __construct(String $nome, String $categoria, float $prezzo, String $marca){
+        
+        $this->nome=$nome;
+        $this->categoria=$categoria;
+        $this->prezzo=$prezzo;
         $this->marca=$marca;
     }
 

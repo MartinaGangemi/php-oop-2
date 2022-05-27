@@ -1,6 +1,5 @@
 <?php 
-
 trait Card{
-    private $numeroCarta;
-    private $cartaScaduta;
+    protected $numeroCarta;
+    protected $cartaScaduta;
 }
