@@ -1,10 +1,11 @@
 <?php
 
-trait User {
-    
-    protected $nomeUtente;
+class User {
+   protected $nomeUtente;
     protected $registrazione;
     protected $sconto;
+    protected $numeroCarta;
+    protected $cartaScaduta;
     
     
     function __construct(String $nomeUtente, bool $registrazione, bool $sconto,int $numeroCarta, bool $cartaScaduta, $pagamentoConsentito){

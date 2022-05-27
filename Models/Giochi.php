@@ -1,6 +1,6 @@
 <?php 
 class Giochi{
-    use Prodotti;
+    use Prodotti, Quantità;
     protected $colore;
     
     function __construct(String $nome, String $categoria, float $prezzo, String $colore){
