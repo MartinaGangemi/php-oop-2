@@ -6,13 +6,8 @@ class Prodotti {
     
     public function __construct(String $tipologiaProdotto, float $prezzo){
         $this->tipologiaProdotto=$tipologiaProdotto;
-        $this->prezzo=$prezzo;
+        $this->prezzo= $prezzo;
     }
 
-    public function setSconto( User $registrazione) {
-        if($this->registrazione){
-            $this->prezzo * $this->sconto;
-        }
-    } 
-
+    
 }

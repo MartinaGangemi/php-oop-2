@@ -1,12 +1,11 @@
 <?php
-
+require __DIR__ ."/Card.php";
 class User {
+    use Card;
     protected $nomeUtente;
-    private $numeroCarta;
-    private $cartaScaduta;
     protected $registrazione;
     protected $sconto;
-    protected $pagamentoConsentito;
+    
     
 
 
